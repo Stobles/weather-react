@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik:wght@400;500;700&display=swap');
+@import url('./variables.css');
+@import-normalize;
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  margin: 0;
+  padding: 0;
+
+  color: var(--text-color);
+
+  overflow-x: hidden;
+}
+
+.container{
+  max-width: calc(1300px + 15px * 2);
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 2047.98px) {
+  .container{
+    max-width: calc(1500px + 15px * 2);
+  }
+}

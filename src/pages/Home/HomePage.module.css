@@ -1,0 +1,39 @@
+@import url('../../styles/styles.css');
+
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background{
+  position: absolute;
+  width: 105%;
+  height: 100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('../../assets/HomePage/background.jfif');
+  background-blend-mode: luminosity;
+  background-size: cover;
+  filter: blur(20px);
+
+  z-index: -1;
+
+  background-color: var(--background-light);
+}
+
+.wrapper{
+  width: 100%;
+  composes: container;
+  display: grid;
+  grid-template-columns: 1.6fr repeat(2, 1fr);
+  grid-template-rows: 330px 280px;
+  gap: 24px;
+}
+
+@media screen and (min-width: 2047.98px) {
+  .wrapper{
+    grid-template-rows: 370px 320px;
+  }
+}

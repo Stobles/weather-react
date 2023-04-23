@@ -1,0 +1,106 @@
+.section{
+  position: relative;
+
+  grid-column: 1/2;
+  grid-row: 1/3;
+
+  background-color: var(--background-default);
+  border-radius: 10px;
+
+  padding: 12px;
+}
+
+.clouds{
+  position: absolute;
+  width: 40%;
+  transform: translate(-40%, -40%);
+
+  z-index: 2;
+}
+
+.backgroundImg{
+  position: absolute;
+  width: 160%;
+  height: 100%;
+  z-index: 0;
+
+  transform: translateX(-20%);
+}
+
+.backgroundWrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  z-index: 0;
+}
+
+.location{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  padding-top: 15px;
+  padding-right: 25px;
+  color: var(--text-color-blue-light);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.wrapper{
+  position: relative;
+  z-index: 1;
+}
+
+.icon{
+  margin-top: 7px;
+}
+
+.temperatureWrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--text-color-gray-light);
+
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.temperatureNow{
+  font-weight: 700;
+  font-size: 102px;
+  line-height: 106px;
+  color: var(--text-color);
+}
+
+.temperatureMinMax{
+  display: flex;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 24px;
+  margin-left: -15px;
+  gap: 10px;
+}
+
+.temperatureMin{
+  color: var(--text-color-blue-light);
+}
+

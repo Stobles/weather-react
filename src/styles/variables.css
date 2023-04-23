@@ -1,0 +1,30 @@
+:root{
+  --text-color: #FFFFFF;
+  --text-color-blue-light: #C2BFF4;
+  --text-color-gray-light: #DAD8F7;
+  --text-color-light: #E7E6FB;
+  --text-color-green: #87EBCD;
+
+  --font-family: 'Lato', sans-serif;
+  --font-size: 14px;
+
+  --background-default: #6D67D0;
+  --background-light: #8F88FA;
+
+  --card-yellow: #F6C833;
+  --card-gradient-yellow: linear-gradient(145deg, rgba(251,219,96,0.20772058823529416) 20%, rgba(251,219,96,0) 100%);
+
+  --large-xl: 2047.98px;
+  --large: 1199.98px;
+  --tablet: 991.98px;
+  --tablet-small: 767.98px;
+  --mobile: 479.98px;
+  --mobile-small: 319.98px;
+}
+
+@custom-media --large-xl (min-width: 2047.98px);
+@custom-media --large (min-width: 1199.98px);
+@custom-media --tablet (min-width: 991.98px);
+@custom-media --tablet-small (min-width: 767.98px);
+@custom-media --mobile (min-width: 479.98px);
+@custom-media --mobile-small (min-width: 319.98px);
