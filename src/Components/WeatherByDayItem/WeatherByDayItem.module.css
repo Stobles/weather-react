@@ -1,0 +1,37 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+
+  color: var(--text-color-gray-light);
+
+  margin: 0;
+}
+
+.img{
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.temperature{
+  display: flex;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.temperatureMin{
+  color: var(--text-color-blue-light);
+}

@@ -14,6 +14,9 @@ export default defineConfig({
       '@comp' : path.resolve(__dirname, 'src/components'),
     },
   },
+  define: {
+    'process.env': {}
+  },
   server: {
     host: true
   },

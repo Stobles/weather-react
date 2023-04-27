@@ -1,7 +1,15 @@
+/* eslint-disable react/prop-types */
+import { useSelector } from 'react-redux';
 import Icon from '../Icon/Icon';
+import Statistic from '../Statistic/Statistic';
 import styles from './WeatherToday.module.css';
+import { selectCurrentWeatherData } from '../../store/selectors';
 
 const WeatherToday = () => {
+  const { weather } = useSelector(selectCurrentWeatherData);
+
+  const tempNow = Math.round(weather?.main?.temp);
+
   return (
     <section className={styles.section}>
       <img 
@@ -23,14 +31,18 @@ const WeatherToday = () => {
         </p>
         <div className={styles.temperatureWrapper}>
           <div className={styles.temperature}>
-            <span className={styles.temperatureNow}>18</span> °C
+            <span className={styles.temperatureNow}>{tempNow}</span> °C
           </div>
           <div className={styles.temperatureMinMax}>
             <span>22°</span>
             <span className={styles.temperatureMin}>16°</span>
           </div>
         </div>
-        
+        <div className={styles.statisticWrapper}>
+          <Statistic name='Wind' icon='wind' value='17' sign='Km/h'/>
+          <Statistic name='Humidity' icon='blob' value='32' sign='%'/>
+          <Statistic name='Rain' icon='weather' value='10' sign='%'/>
+        </div>
       </div>
     </section>
   )

@@ -37,3 +37,18 @@
     grid-template-rows: 370px 320px;
   }
 }
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--background-default);
+  border-radius: 10px;
+}
+
+.loaderToday{
+  composes: loader;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
